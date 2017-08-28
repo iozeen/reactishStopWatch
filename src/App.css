@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.buttons {
+    padding: 0.5rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0 1rem;
+}
+
+.time-normal {
+    font-size: 2em;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.time-small {
+    font-size: 1em;
+    flex-basis: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.time-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-list li{
+    flex: 0 0 1rem;
+}
+
+.blue {
+    color: #00b0ff;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer {
+    margin: 0 5rem;
+    border-top: 1px solid #BDBDBD;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
+    height: 75%;
+}
+
+.start{
+    color: #00c853;
+}
+
+.stop{
+    color: #d50000;
+}
+
+.reset, .interval{
+    color:#00b0ff;
+}
+
+.header {
+    font-size: 2rem;
+}
+
+.time-index{
+    font-size: 2em;
+    padding-right: 2rem;
+}
